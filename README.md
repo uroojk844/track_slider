@@ -1,10 +1,12 @@
-This is a nice custom slider for flutter with a track design. It gives you current tick value on scroll which you can access by using onChange funtion. 
+This is a nice custom slider for flutter with a track design. It gives you current tick value on scroll which you can access by using onChange funtion.
 
 ## Features
 
-Get track value on scroll.
-Set initial position of slider.
-
+- Set step in multiple of 4.
+- Get track value on scroll.
+- Set initial position of slider.
+- Set indicator color using selectedTrackColor.
+- Set track color using unselectedTrackColor.
 
 ## Getting started
 
@@ -15,7 +17,6 @@ track_slider: ^0.0.1
 ```
 
 ## Usage
-
 
 ```dart
 TrackSlider(
