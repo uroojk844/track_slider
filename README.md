@@ -2,7 +2,7 @@ This is a nice custom slider for flutter with a track design. It gives you curre
 
 ## Features
 
-- Set step in multiple of 4.
+- Set steps in multiple of 4.
 - Get track value on scroll.
 - Set initial position of slider.
 - Set indicator color using selectedTrackColor.
@@ -20,7 +20,7 @@ track_slider: ^0.0.1
 
 ```dart
 TrackSlider(
-    step:100,
+    steps:100,
     selectedTrackColor = Colors.blue,
     unselectedTrackColor = Colors.grey,
     marginLeft: 36,
