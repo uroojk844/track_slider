@@ -17,8 +17,8 @@ class TrackSlider extends StatefulWidget {
   final int defaultValue;
 
   final double marginLeft;
-  final Color? selectedTrackColor;
-  final Color? unselectedTrackColor;
+  final Color selectedTrackColor;
+  final Color unselectedTrackColor;
 
   final int steps;
 
@@ -30,11 +30,13 @@ class _TrackSliderState extends State<TrackSlider> {
   late ScrollController scrollController;
 
   setPosition(ScrollPosition position) {
-    position.animateTo(
-      widget.defaultValue * 10,
-      duration: const Duration(milliseconds: 250),
-      curve: Curves.linear,
-    );
+    if (widget.defaultValue > 0) {
+      position.animateTo(
+        widget.defaultValue * 10,
+        duration: const Duration(milliseconds: 250),
+        curve: Curves.linear,
+      );
+    }
   }
 
   int scaleValue = 0;
@@ -62,30 +64,27 @@ class _TrackSliderState extends State<TrackSlider> {
       widget.onChange(scaleValue);
     });
 
-    return SizedBox(
-      height: 80,
-      child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        controller: scrollController,
-        child: Container(
-          margin:
-              EdgeInsets.symmetric(horizontal: width / 2 - widget.marginLeft),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: List.generate(
-              widget.steps + 1,
-              (index) => Container(
-                margin: const EdgeInsets.symmetric(horizontal: 4),
-                width: 2,
-                height: index == scaleValue
-                    ? 80
-                    : index % 4 == 0
-                        ? 40
-                        : 20,
-                color: index == scaleValue
-                    ? widget.selectedTrackColor
-                    : widget.unselectedTrackColor,
-              ),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      controller: scrollController,
+      child: Container(
+        height: 80,
+        margin: EdgeInsets.symmetric(horizontal: width / 2 - widget.marginLeft),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: List.generate(
+            widget.steps + 1,
+            (index) => Container(
+              margin: const EdgeInsets.symmetric(horizontal: 4),
+              width: 2,
+              height: index == scaleValue
+                  ? 80
+                  : index % 4 == 0
+                      ? 40
+                      : 20,
+              color: index == scaleValue
+                  ? widget.selectedTrackColor
+                  : widget.unselectedTrackColor,
             ),
           ),
         ),

@@ -9,3 +9,7 @@
 ## 0.0.3
 
 - Added documentation.
+
+## 0.0.4
+
+- Added null issue in default value.
