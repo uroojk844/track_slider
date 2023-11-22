@@ -13,7 +13,7 @@ This is a nice custom slider for flutter with a track design. It gives you curre
 Import this package in your project dependencies.
 
 ```dart
-track_slider: ^0.0.1
+track_slider:
 ```
 
 ## Usage
