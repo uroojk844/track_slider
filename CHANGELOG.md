@@ -12,4 +12,4 @@
 
 ## 0.0.4
 
-- Added null issue in default value.
+- Solved null issue in defaultValue.
