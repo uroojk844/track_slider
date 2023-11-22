@@ -1,6 +1,6 @@
 name: track_slider
 description: A custom slider with tracks.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/uroojk844/track_slider
 
 environment:
