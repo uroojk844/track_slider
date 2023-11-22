@@ -1,6 +1,6 @@
 name: track_slider
-description: A custom slider with tracks.
-version: 0.0.2
+description: track_slider is a powerful and customizable track slider built with love using Flutter and Dart. 🚀 Whether you're developing for iOS, Android, web, or desktop, this package has got you covered, providing a seamless experience across all Flutter platforms.
+version: 0.0.3
 homepage: https://github.com/uroojk844/track_slider
 
 environment:
