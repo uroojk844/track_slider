@@ -1,3 +1,4 @@
+library track_slider;
 
 import 'package:flutter/material.dart';
 
