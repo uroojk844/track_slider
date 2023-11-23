@@ -13,3 +13,7 @@
 ## 0.0.4
 
 - Solved null issue in defaultValue.
+
+## 0.0.5
+
+- Example added

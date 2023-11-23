@@ -13,16 +13,16 @@ This is a nice custom slider for flutter with a track design. It gives you curre
 Import this package in your project dependencies.
 
 ```dart
-track_slider:
+track_slider: ^0.0.5
 ```
 
 ## Usage
 
 ```dart
 TrackSlider(
-    steps:100,
-    selectedTrackColor = Colors.blue,
-    unselectedTrackColor = Colors.grey,
+    steps: 100,
+    selectedTrackColor: Colors.blue,
+    unselectedTrackColor: Colors.grey,
     marginLeft: 36,
     defaultValue: 4,
     onChange: (value) {
@@ -30,6 +30,16 @@ TrackSlider(
     },
 )
 ```
+
+## Properties
+
+- `steps: ` Number of lines on slider.
+- `default_value: ` Define initial position of slider.
+- `marginLeft: ` It is the left padding of parent widget if available.
+- `selectedTrackColor: ` Colors of selected index.
+- `unselectedTrackColor: ` Color of track.
+- `onChange(): ` It returns the value of current index.
+
 
 ## Screenshots
 
