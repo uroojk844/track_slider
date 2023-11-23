@@ -2,18 +2,18 @@ This is a nice custom slider for flutter with a track design. It gives you curre
 
 ## Features
 
-- Set steps in multiple of 4.
-- Get track value on scroll.
-- Set initial position of slider.
-- Set indicator color using selectedTrackColor.
-- Set track color using unselectedTrackColor.
+- Set `steps` in the slider.
+- Get current index on scroll by using `onChange()` method.
+- Set initial position of the slider using `defaultValue`.
+- Set indicator color using `selectedTrackColor`.
+- Set track color using `unselectedTrackColor`.
 
 ## Getting started
 
 Import this package in your project dependencies.
 
 ```dart
-track_slider: ^0.0.5
+track_slider: ^0.0.6
 ```
 
 ## Usage
@@ -33,12 +33,12 @@ TrackSlider(
 
 ## Properties
 
-- `steps: ` Number of lines on slider.
-- `default_value: ` Define initial position of slider.
-- `marginLeft: ` It is the left padding of parent widget if available.
-- `selectedTrackColor: ` Colors of selected index.
-- `unselectedTrackColor: ` Color of track.
-- `onChange(): ` It returns the value of current index.
+- `steps:` Number of lines on slider.
+- `default_value:` Define initial position of slider.
+- `marginLeft:` It is the left padding of parent widget if available.
+- `selectedTrackColor:` Colors of selected index.
+- `unselectedTrackColor:` Color of track.
+- `onChange():` It returns the value of current index.
 
 
 ## Screenshots

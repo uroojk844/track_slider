@@ -3,6 +3,7 @@ library track_slider;
 import 'package:flutter/material.dart';
 
 class TrackSlider extends StatefulWidget {
+  /// It will return the current position of the slider
   final ValueChanged<int> onChange;
 
   const TrackSlider({
@@ -14,12 +15,20 @@ class TrackSlider extends StatefulWidget {
     this.defaultValue = 0,
     this.marginLeft = 0,
   });
+
+  /// It defines the initial position of the slider
   final int defaultValue;
 
+  /// It is used to align the slider in center if widget is wrapped by a padding or margin.
   final double marginLeft;
+
+  /// color of selected track
   final Color selectedTrackColor;
+
+  /// color of unselected tracks
   final Color unselectedTrackColor;
 
+  /// Number of tracks in the slider
   final int steps;
 
   @override
